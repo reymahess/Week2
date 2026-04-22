@@ -1,10 +1,10 @@
-package base; // di dalam folder base
+
 
 public class Produk {
-    private String nama; //hanya bisa diakses di dalam class Produk
-    String kategori; // hanya bisa diakses dalam package toko
-    protected double harga; //bisa diakses subclass meskipun beda package
-    public int stok; //bisa diakses dari mana saja
+    private String nama; 
+    String kategori;
+    private double harga; 
+    private int stok; 
 
     public Produk(String nama, double harga, int stok, String kategori){
         this.nama = nama;
@@ -12,14 +12,29 @@ public class Produk {
         this.stok = stok;
         this.kategori = kategori;
     }
+    
 
     public void tampilInfo(){
-//semua atribut bisa diakses di sini - kita masih didalam class Produk
         System.out.println("Produk  : " + nama);
         System.out.println("Kategori: " + kategori);
         System.out.println("Harga   : Rp." + harga);
         System.out.println("Stok    : " + stok);
         System.out.println("------------------");
+    }
+    public String getNama() {
+        return nama;
+    }
+    public double getHarga() {
+        return harga;
+    }
+    public int getStok() {
+        return stok;
+    }
+    public void setHarga(double harga) {
+        this.harga = harga;
+    }
+    public void setStok(int stok) {
+        this.stok = stok;
     }
 
     public static void main(String[] args) {
