@@ -4,16 +4,35 @@ public class makanan extends Produk {
         super(nama, harga, stok, kategori);
         this.expired = expired;
     }
-    public void tampilData() { // Override method
-        super.tampilInfo(); // Memanggil method tampilInfo() dari kelas induk
+
+    @Override
+    public void tampilInfo() { // Override method
+        System.out.println("Makanan");
+        super.tampilInfo();
         System.out.println("Expired : " + expired + " hari");
-        System.out.println("------------------");
     }
+
     public void setExpired(int expired) { // Setter untuk atribut expired
-        if (expired < 0) {
-            System.out.println("Masa expired tidak boleh negatif.");
+        if (expired <= 0) {
+            System.out.println("Masa expired tidak boleh nol atau negatif.");
         } else {
             this.expired = expired;
+        }
+    }
+    
+    public void setExpired(int expired, String type) { // Setter untuk atribut expired
+        if (type.equals("Nasi")) {
+            if (expired > 4){
+                System.out.println("Masa Expired Tidak Boleh Negatif ");
+            } else {
+                this.expired = expired;
+            }
+        } else {
+            if (expired < 2) {
+                System.out.println("Masa expired tidak boleh nol atau negatif.");
+            } else {
+                this.expired = expired;
+            }
         }
     
     }

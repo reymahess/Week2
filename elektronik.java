@@ -4,11 +4,14 @@ public class elektronik extends Produk {
         super(nama, harga, stok, kategori);
         this.garansi = garansi;
     }
-    public void tampilData() { // Override method
+    @Override
+    public void tampilInfo() { // Override method
+        System.out.println("Elektronik");
         super.tampilInfo(); // Memanggil method tampilInfo() dari kelas induk
         System.out.println("Garansi : " + garansi + " tahun");
         System.out.println("------------------");
     }
+    
     public void setGaransi(int garansi) { // Setter untuk atribut garansi
         if (garansi <= 0) {
             System.out.println("Masa garansi tidak boleh negatif.");
