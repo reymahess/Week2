@@ -36,12 +36,10 @@ class elektronik extends Produk {
         return HitungTotalHarga(jumlahBeli) - hitungPajak(jumlahBeli);
         
 
-    public void setGaransi(int garansi) { // Setter untuk atribut garansi
-        if (garansi <= 0) {
-            System.out.println("Masa garansi tidak boleh negatif.");
-        } else {
-            this.garansi = garansi;
-        }
+    @Override
+    public double hitungpajak(double harga) {
+        return harga * 0.20;
+
     
     }
 }
