@@ -29,6 +29,10 @@ class makanan extends Produk {
             return HitungTotalHarga(jumlahBeli) * 0.05; 
         return 0; 
         }
+        
+    public double hitungDiskon(int jumlahBeli, double persenDiskon) {
+        return HitungTotalHarga(jumlahBeli) * (persenDiskon / 100);
+        }
     }
 
     public void setExpired(int expired) { // Setter untuk atribut expired
