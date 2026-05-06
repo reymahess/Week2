@@ -14,12 +14,14 @@ class makanan extends Produk {
     public String getKategori() {
         return kategori;
     }
-    
+
     @Override
     public void tampilInfo() { // Override method
         System.out.println("Makanan");
-        super.tampilInfo();
-        System.out.println("Expired : " + expired + " hari");
+       
+        System.out.println("Kadaluwarsa : " + kadaluwarsa);
+        System.out.println("Kategori : " + kategori);
+        System.out.println("------------------------------");
     }
 
     public void setExpired(int expired) { // Setter untuk atribut expired
