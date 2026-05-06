@@ -1,4 +1,4 @@
-public class elektronik extends Produk {
+class elektronik extends Produk {
     private String merek;
     private int garansiTahun;
     private static final double PPN = 0.11;
@@ -11,8 +11,9 @@ public class elektronik extends Produk {
     @Override
     public void tampilInfo() { // Override method
         System.out.println("Elektronik");
-        super.tampilInfo(); // Memanggil method tampilInfo() dari kelas induk
-        System.out.println("Garansi : " + garansi + " tahun");
+        System.out.println("Nama : " + getNama());
+        System.out.println("Merek : " + merek);
+        System.out.println("Garansi : " + garansiTahun + " tahun");
         System.out.println("------------------");
     }
     
