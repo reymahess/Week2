@@ -1,5 +1,7 @@
-public class makanan extends Produk {
-    private int expired; // Menambahkan atribut expired untuk kelas makanan
+class makanan extends Produk {
+    private String kadaluwarsa;
+    private String kategori;
+    
     public makanan(String nama, double harga, int stok, String kategori, int expired) { // Konstruktor untuk kelas makanan
         super(nama, harga, stok, kategori);
         this.expired = expired;
