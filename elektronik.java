@@ -16,6 +16,12 @@ class elektronik extends Produk {
         System.out.println("Garansi : " + garansiTahun + " tahun");
         System.out.println("------------------");
     }
+    public String getMerek() {
+        return merek;
+    }
+    public int getGaransi() {
+        return garansiTahun;
+    }   
     
     public void setGaransi(int garansi) { // Setter untuk atribut garansi
         if (garansi <= 0) {
