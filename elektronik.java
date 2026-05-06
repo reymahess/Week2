@@ -1,5 +1,8 @@
 public class elektronik extends Produk {
-    private int garansi; // Menambahkan atribut garansi untuk kelas makanan
+    private String merek;
+    private int garansiTahun;
+    private static final double PPN = 0.11;
+
     public elektronik(String nama, double harga, int stok, String kategori, int garansi) { // Konstruktor untuk kelas makanan
         super(nama, harga, stok, kategori);
         this.garansi = garansi;
