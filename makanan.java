@@ -37,32 +37,13 @@ class makanan extends Produk {
 
     public double hitungHargaSetelahDiskon(int jumlahBeli) {
         return HitungTotalHarga(jumlahBeli) - hitungDiskon(jumlahBeli);
-        }
         
+
     }
 
-    public void setExpired(int expired) { // Setter untuk atribut expired
-        if (expired <= 0) {
-            System.out.println("Masa expired tidak boleh nol atau negatif.");
-        } else {
-            this.expired = expired;
-        }
+    @Override
+    public double hitungpajak(double harga) {
+        return harga * 0.10; 
     }
-    
-    public void setExpired(int expired, String type) { // Setter untuk atribut expired
-        if (type.equals("Nasi")) {
-            if (expired > 4){
-                System.out.println("Masa Expired Tidak Boleh Negatif ");
-            } else {
-                this.expired = expired;
-            }
-        } else {
-            if (expired < 2) {
-                System.out.println("Masa expired tidak boleh nol atau negatif.");
-            } else {
-                this.expired = expired;
-            }
-        }
-    
-    }
+
 }
