@@ -9,7 +9,7 @@ abstract public class Produk {
         this.nama = nama;
         this.harga = harga;
         this.stok = stok;
-        this.kategori = kategori;
+    
     }
     
 
