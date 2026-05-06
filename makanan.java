@@ -23,6 +23,13 @@ class makanan extends Produk {
         System.out.println("Kategori : " + kategori);
         System.out.println("------------------------------");
     }
+    
+    public double hitungDiskon(int jumlahBeli){
+        if ((jumlahBeli >= 10)) {
+            return HitungTotalHarga(jumlahBeli) * 0.05; 
+        return 0; 
+        }
+    }
 
     public void setExpired(int expired) { // Setter untuk atribut expired
         if (expired <= 0) {
