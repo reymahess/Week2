@@ -13,12 +13,7 @@ abstract public class Produk {
     }
     
 
-    public void tampilInfo(){
-        System.out.println("Produk  : " + nama);
-        System.out.println("Kategori: " + kategori);
-        System.out.println("Harga   : Rp." + harga);
-        System.out.println("Stok    : " + stok);
-        System.out.println("------------------");
+   
     }
     public String getNama() {
         return nama;
@@ -49,11 +44,12 @@ abstract public class Produk {
         }
         stok -= jumlahBeli;
         System.out.println("Beli" + nama + " x" + jumlahBeli + " = Rp" + HitungTotalHarga(jumlahBeli) + " Sisa stok: " + stok);
-        
+
     }
+    public abstract void tampilInfo();
+        
+    
 
     public static void main(String[] args) {
         
     }
-
-}
