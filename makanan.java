@@ -8,6 +8,13 @@ class makanan extends Produk {
         this.kategori = kategori;
     }
 
+    public String getKadaluwarsa() {
+        return kadaluwarsa;
+    }
+    public String getKategori() {
+        return kategori;
+    }
+    
     @Override
     public void tampilInfo() { // Override method
         System.out.println("Makanan");
