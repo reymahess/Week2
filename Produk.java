@@ -1,8 +1,7 @@
 
 
-public class Produk {
+abstract public class Produk {
     private String nama; 
-    String kategori;
     private double harga; 
     private int stok; 
 
