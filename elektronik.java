@@ -23,6 +23,19 @@ class elektronik extends Produk {
         return garansiTahun;
     }   
     
+    public double hitungDiskon(int jumlahBeli){
+        return HitungTotalHarga(jumlahBeli) * PPN;
+    }
+
+    public double hitungDiskon(int jumlahBeli, double persenPajak) {
+        return HitungTotalHarga(jumlahBeli) * (persenPajak / 100);
+        }
+    }
+
+    public double hitungHargaSetelahDiskon(int jumlahBeli) {
+        return HitungTotalHarga(jumlahBeli) - hitungPajak(jumlahBeli);
+        
+
     public void setGaransi(int garansi) { // Setter untuk atribut garansi
         if (garansi <= 0) {
             System.out.println("Masa garansi tidak boleh negatif.");
