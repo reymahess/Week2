@@ -8,8 +8,13 @@ public class Main {
         makanan indomie = new makanan("Indomie Goreng", 3500, 100, "Makanan Berat", "2024-12-31");
         makanan roti = new makanan("Roti Tawar", 12000, 100, "Makanan Ringan", "2024-11-30");
 
+        System.out.println("--- Informasi Produk ---");
+        laptop.tampilInfo();
+        hp.tampilInfo();
+        indomie.tampilInfo();
+        roti.tampilInfo();
 
-
+        
 
 
 
