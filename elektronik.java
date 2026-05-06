@@ -3,9 +3,10 @@ public class elektronik extends Produk {
     private int garansiTahun;
     private static final double PPN = 0.11;
 
-    public elektronik(String nama, double harga, int stok, String kategori, int garansi) { // Konstruktor untuk kelas makanan
-        super(nama, harga, stok, kategori);
-        this.garansi = garansi;
+    public elektronik(String nama, String merek, double harga, int stok, int garansiTahun) { // Konstruktor untuk kelas makanan
+        super(nama, harga, stok);
+        this.merek = merek;
+        this.garansiTahun = garansiTahun;
     }
     @Override
     public void tampilInfo() { // Override method
