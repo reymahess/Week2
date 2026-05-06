@@ -1,10 +1,11 @@
 class makanan extends Produk {
     private String kadaluwarsa;
     private String kategori;
-    
-    public makanan(String nama, double harga, int stok, String kategori, int expired) { // Konstruktor untuk kelas makanan
-        super(nama, harga, stok, kategori);
-        this.expired = expired;
+
+    public makanan(String nama, double harga, int stok, String kategori, String kadaluwarsa) { 
+        super(nama, harga, stok);
+        this.kadaluwarsa = kadaluwarsa;
+        this.kategori = kategori;
     }
 
     @Override
